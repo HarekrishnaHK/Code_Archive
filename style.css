@@ -1,0 +1,175 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('rain.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 1.15em;
+    margin-bottom: 20px;
+    color: #13d754;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+input[type="radio"]:checked + label {
+    background: #78bb64;
+    color: #000;
+}
+
+input[type="radio"] + label:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #1bb771;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    margin: 0 10px;  /* Add horizontal margin to create space */
+}
+
+button:hover {
+    background-color: #346797;
+}
+
+button#prev {
+    background-color: #0098ac;
+}
+
+button#prev:hover {
+    background-color: #2f4e99;
+}
+
+button#submit {
+    background-color: #2c5999;
+}
+
+button#submit:hover {
+    background-color: #0e760e;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #d793c9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#restartBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#restartBtn:hover {
+    background-color: #45a049;
+}
